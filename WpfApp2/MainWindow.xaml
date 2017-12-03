@@ -1,0 +1,13 @@
+﻿<NavigationWindow x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Source="MainMenu.xaml"
+        ShowsNavigationUI="False"
+        mc:Ignorable="d"
+        Title="Парні картинки " Height="700" Width="821" WindowStartupLocation="CenterScreen" ShowActivated="False" MinWidth="800" MinHeight="700" MaxWidth="800" MaxHeight="700" ResizeMode="NoResize" Icon="icons_4271.ico"  >
+    <NavigationWindow.Background>
+        <ImageBrush ImageSource="2_2.png" TileMode="None"/>
+    </NavigationWindow.Background>
+</NavigationWindow>
