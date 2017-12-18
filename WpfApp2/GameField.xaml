@@ -1,0 +1,40 @@
+﻿<Page x:Class="WpfApp2.GameField"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="800"
+      Title="GameField" ShowsNavigationUI="False" Height="700" Background="#FFFBF3CC">
+
+    <Grid Margin="0,0,10,0" RenderTransformOrigin="0.463,0.518">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="232*"/>
+        </Grid.RowDefinitions>
+        <Canvas Name="GameCanvas" HorizontalAlignment="Center" Height="528" Grid.Row="1" VerticalAlignment="Top" Width="645" Margin="99,13,46,0" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            <Label Name="FinLbl" Content="IM INVISIBLE" Canvas.Left="10" Canvas.Top="200" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72" Width="600" Height="100" Visibility="Hidden"/>
+        </Canvas>
+
+        <Grid HorizontalAlignment="Left" Height="99" VerticalAlignment="Top" Width="800" Margin="0,0,-10,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Name="TimeLb" Content="00:00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="53" Width="263" Grid.Column="1" Margin="82,10,0,0" FontFamily="/WpfApp2;component/#DS-Digital" FontSize="48" HorizontalContentAlignment="Right" />
+            <Button Content="&lt;&lt; Назад" HorizontalAlignment="Left" Margin="59,10,0,0" VerticalAlignment="Top" Width="165" Height="63" FontSize="22" Click="Button_Click" FontFamily="Ravie" Foreground="#FFC52525">
+                <Button.Background>
+                    <ImageBrush ImageSource="фон.jpg"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Button x:Name="button" Content="Зберегти результати" HorizontalAlignment="Center" Margin="207,187,186,0" Grid.Row="2" VerticalAlignment="Top" Width="397" Height="87"  Visibility="Hidden" Click="button_Click_1" Foreground="#FFC52525" FontFamily="Raavi" FontSize="36">
+            <Button.Background>
+                <ImageBrush ImageSource="фон.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
