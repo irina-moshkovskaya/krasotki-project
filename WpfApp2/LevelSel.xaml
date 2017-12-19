@@ -1,0 +1,68 @@
+﻿<Page x:Class="WpfApp2.LevelSel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="LevelSel" Height="750">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="6.png"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Right" Height="730" VerticalAlignment="Top" Width="800" Margin="0,20,0,0">
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="154*"/>
+                <RowDefinition Height="254*"/>
+                <RowDefinition Height="135*"/>
+                <RowDefinition Height="187*"/>
+            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Left" Height="80" Grid.Row="2" VerticalAlignment="Top" Width="800" Margin="0,51,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton  Content="Легкий рівень&#xD;&#xA;" HorizontalAlignment="Center" Margin="28,28,55,6" VerticalAlignment="Center" GroupName="Difficulty" Height="46" Checked="RadioButton_Checked" FontFamily="Ravie" FontSize="22" Width="184" FontStyle="Italic" Foreground="#FFC52525"/>
+                <RadioButton Content="Середній рівень&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Center" Margin="27,26,10,10" VerticalAlignment="Center" GroupName="Difficulty" IsChecked="True" Checked="RadioButton_Checked_1" FontFamily="Ravie" FontSize="22" Width="229" Height="44" FontStyle="Italic" Foreground="#FFC52525"/>
+                <RadioButton Content="Складний рівень&#xD;&#xA;" Grid.Column="2" HorizontalAlignment="Center" Margin="39,28,43,10" VerticalAlignment="Center" GroupName="Difficulty" Checked="RadioButton_Checked_2" FontFamily="Ravie" FontSize="22" Height="42" FontStyle="Italic" Foreground="#FFC52525"/>
+            </Grid>
+            <Label Content="Оберіть тематику картинок&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,26,0,55" Width="752" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="48" FontFamily="Ravie" FontStyle="Italic" Foreground="#FFC52525"/>
+            <Grid HorizontalAlignment="Left" Height="80" Grid.Row="3" VerticalAlignment="Top" Width="800" Margin="10,4,-10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Назад" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="212" Height="60" Click="Button_Click" Foreground="#FFC52525" FontFamily="Ravie" FontSize="20">
+                    <Button.Background>
+                        <ImageBrush ImageSource="фон.jpg"/>
+                    </Button.Background>
+                </Button>
+                <Button Content="Почати гру" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="212" Height="60" Grid.Column="1" Click="Button_Click_1" Foreground="#FFC52525" FontSize="20">
+                    <Button.Background>
+                        <ImageBrush ImageSource="фон.jpg"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+            <ListBox HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="766" FontSize="36" Background="#33FFFFFF" Margin="24,126,0,0" Grid.RowSpan="2" SelectionChanged="ListBox_SelectionChanged" FontFamily="Ravie">
+                <ListBoxItem Content="Техніка" Selected="ListBoxItem_Selected_1" FontStyle="Italic" Foreground="#FFC52525"/>
+                <ListBoxItem Content="Тварини" Selected="ListBoxItem_Selected" FontStyle="Italic" Foreground="#FFC52525"/>
+            </ListBox>
+            <Label x:Name="label" Content="          Оберіть складність &#xD;&#xA;" HorizontalAlignment="Left" Margin="60,184,0,0" Grid.Row="1" VerticalAlignment="Top" Width="632" RenderTransformOrigin="0.5,0.5" Height="62" FontFamily="Ravie" FontSize="36" Cursor="None" FontStyle="Italic" Foreground="#FFC52525">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="3.066"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.696"/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </Grid>
+
+    </Grid>
+</Page>
