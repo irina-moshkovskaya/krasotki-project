@@ -49,6 +49,7 @@ namespace WpfApp2
             {
                 NavigationService nav;
                 nav = NavigationService.GetNavigationService(this);
+                nav.Navigate(new ShowResult(lines));
             }
 
         }
@@ -57,7 +58,7 @@ namespace WpfApp2
         {
             NavigationService nav;
             nav = NavigationService.GetNavigationService(this);
-            
+            nav.Navigate(new LevelSel());
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

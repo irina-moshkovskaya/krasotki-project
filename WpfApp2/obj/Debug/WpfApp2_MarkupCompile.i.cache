@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Ира\Desktop\Kursova — копия\DoublePicture\WpfApp2\obj\Debug\
+C:\Users\Ира\Desktop\krasotki-project\WpfApp2\obj\Debug\
 WpfApp2
 none
 false
 DEBUG;TRACE
-C:\Users\Ира\Desktop\Kursova — копия\DoublePicture\WpfApp2\App.xaml
-214489500
+C:\Users\Ира\Desktop\krasotki-project\WpfApp2\App.xaml
+6460720401
 2-997573922
-10-1252085437
+14-173907111
 13738642453
-MainMenu.xaml;MainWindow.xaml;
+GameField.xaml;LevelSel.xaml;MainMenu.xaml;MainWindow.xaml;Record.xaml;ShowResult.xaml;
 
 True
 
